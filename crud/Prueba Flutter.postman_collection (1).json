@@ -1,0 +1,200 @@
+{
+	"info": {
+		"_postman_id": "c2eaba81-619d-4e88-bdc2-9dc2e8068550",
+		"name": "Prueba Flutter",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "11432818",
+		"_collection_link": "https://madeinwebmx.postman.co/workspace/Made-in-Web~5b710ab3-65ae-4bac-84d5-cb7d8b9798e9/collection/11432818-c2eaba81-619d-4e88-bdc2-9dc2e8068550?action=share&source=collection_link&creator=11432818"
+	},
+	"item": [
+		{
+			"name": "READ",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "CREATE",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "TEST_NAME",
+							"type": "text"
+						},
+						{
+							"key": "last_name",
+							"value": "TEST_LAST_NAME",
+							"type": "text"
+						},
+						{
+							"key": "m_last_name",
+							"value": "TEST_M_LAST_NAME",
+							"type": "text"
+						},
+						{
+							"key": "birthday",
+							"value": "2020-01-01",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "navichavez@miw.mx",
+							"type": "text"
+						},
+						{
+							"key": "rfc",
+							"value": "AAAA000000AAA",
+							"type": "text"
+						},
+						{
+							"key": "curp",
+							"value": "AAAA000000AAAAAA00",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "0123456789",
+							"type": "text"
+						},
+						{
+							"key": "image",
+							"type": "file",
+							"src": "/W:/OneDrive/Imágenes/Fotolia/bg_fotolia3.jpg"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://miwws.com/PROYECTOS_MIW/flutter/public/api/users",
+					"protocol": "https",
+					"host": [
+						"miwws",
+						"com"
+					],
+					"path": [
+						"PROYECTOS_MIW",
+						"flutter",
+						"public",
+						"api",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UPDATE",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "id",
+							"value": "1001",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "UPDATE_TEST_NAME",
+							"type": "text"
+						},
+						{
+							"key": "last_name",
+							"value": "UPDATE_TEST_LAST_NAME",
+							"type": "text"
+						},
+						{
+							"key": "m_last_name",
+							"value": "UPDATE_TEST_M_LAST_NAME",
+							"type": "text"
+						},
+						{
+							"key": "birthday",
+							"value": "2020-01-01",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "navichavez@miw.mx",
+							"type": "text"
+						},
+						{
+							"key": "rfc",
+							"value": "AAAA000000AAA",
+							"type": "text"
+						},
+						{
+							"key": "curp",
+							"value": "AAAA000000AAAAAA00",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "0123456789",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://miwws.com/PROYECTOS_MIW/flutter/public/api/update/user",
+					"protocol": "https",
+					"host": [
+						"miwws",
+						"com"
+					],
+					"path": [
+						"PROYECTOS_MIW",
+						"flutter",
+						"public",
+						"api",
+						"update",
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "id",
+							"value": "1001",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://miwws.com/PROYECTOS_MIW/flutter/public/api/delete/user",
+					"protocol": "https",
+					"host": [
+						"miwws",
+						"com"
+					],
+					"path": [
+						"PROYECTOS_MIW",
+						"flutter",
+						"public",
+						"api",
+						"delete",
+						"user"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
